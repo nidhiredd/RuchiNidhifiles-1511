@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vaagdevi Engineering - Student ID</title>
+  <style>
+    /* :root{
+      --card-w: 700px;
+      --accent1: #ff8a00;
+      --accent2: #ff2d95;
+      --deep: #1f2937;
+      --muted:#6b7280;
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    } */
+
+    body{
+      min-height:100vh;
+      margin:0;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(180deg,#f3f4f6 0%, #ffffff 100%);
+      padding:32px;
+    }
+
+    .id-card{
+      width:var(--card-w);
+      max-width:95%;
+      border-radius:12px;
+      box-shadow:0 10px 30px rgba(15,23,42,0.12);
+      overflow:hidden;
+      background:white;
+      display:grid;
+      grid-template-columns: 1fr 320px;
+      gap:0;
+    }
+
+    /* Header section (spans full width) */
+    .header{
+      grid-column:1/-1;
+      background:linear-gradient(90deg,var(--accent1), var(--accent2));
+      color:rgb(9, 9, 9);
+      padding:18px 22px;
+      display:flex;
+      align-items:center;
+      gap:16px;
+    }
+
+    .logo{
+      width:64px;
+      height:64px;
+      border-radius:50%;
+      background:rgba(255,255,255,0.15);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      letter-spacing:0.6px;
+      font-size:11px;
+      text-align:center;
+      padding:6px;
+    }
+
+    .title{
+      line-height:1;
+    }
+
+    .title h1{
+      margin:0;
+      font-size:20px;
+      letter-spacing:1px;
+    }
+    .title p{margin:2px 0 0 0; font-size:12px; opacity:0.95}
+
+    .main{
+      padding:20px 22px;
+      display:flex;
+      gap:18px;
+      align-items:flex-start;
+    }
+
+    .photo{
+      width:140px;
+      height:170px;
+      flex:0 0 140px;
+      border-radius:6px;
+      overflow:hidden;
+      border:4px solid #fff;
+      box-shadow:0 6px 18px rgba(2,6,23,0.08);
+      background:#eee url('nidhi.jpg') center/cover no-repeat;
+    }
+
+    .details{
+      flex:1;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+    }
+
+    .details .info{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:8px 22px;
+    }
+
+    .label{font-size:12px; color:var(--muted);}
+    .value{font-weight:700; color:var(--deep);}
+
+    .course{grid-column:1/-1; margin-top:6px}
+
+    .meta{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-top:12px;
+    }
+
+    .qr{
+      width:88px;
+      height:88px;
+      background:#f3f4f6;
+      border-radius:6px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:10px;
+      color:var(--muted);
+      border:1px dashed rgba(0,0,0,0.06);
+    }
+
+    .valid{font-size:13px; color:var(--muted)}
+
+    .footer{
+      grid-column:1/-1;
+      padding:12px 22px;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      border-top:1px solid #f3f4f6;
+      background:linear-gradient(180deg, rgba(255,255,255,0.6), transparent);
+    }
+
+    .signature{display:flex; flex-direction:column; align-items:flex-end}
+    .signature small{font-size:11px; color:var(--muted)}
+
+    /* Responsive */
+    @media (max-width:700px){
+      .id-card{grid-template-columns:1fr;}
+      .main{flex-direction:row;}
+      .details .info{grid-template-columns:1fr;}
+      .photo{width:120px; height:150px}
+    }
+  </style>
+</head>
+<body>
+  <article class="id-card" role="article" aria-label="Student ID Card - Vaagdevi Engineering College">
+    <header class="header">
+      <div class="logo" aria-hidden>VEC</div>
+      <div class="title">
+        <h1>VAAGDEVI ENGINEERING COLLEGE</h1>
+        <p>Approved by AICTE, Affiliated to JNTUH and SBTET Telangana</p>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="photo" title="Student photo"></div>
+
+      <div class="details">
+        <div>
+          <div class="info">
+            <div>
+              <div class="label">Name</div>
+              <div class="value">BODDIREDDY NIDHI REDDY</div>
+            </div>
+            <div>
+              <div class="label">Roll No</div>
+              <div class="value">21UK1A6658</div>
+            </div>
+
+            <div class="course">
+              <div class="label">Course</div>
+              <div class="value">BTECH - CSM (AI &amp; ML)</div>
+            </div>
+
+            <div>
+              <div class="label">Valid Upto</div>
+              <div class="value">2021 - 2025</div>
+            </div>
+            <div>
+              <div class="label">Status</div>
+              <div class="value">Student</div>
+            </div>
+          </div>
+
+          <div class="meta">
+            <div class="qr">QR<br>Code</div>
+            <div class="valid">This ID card is issued by Vaagdevi Engineering College. Keep it safe and present when required.</div>
+          </div>
+        </div>
+
+        <div class="signature">
+          <small>Principal</small>
+          <div style="font-weight:700;" aria-hidden>———</div>
+        </div>
+      </div>
+
+    </section>
+
+    <div class="footer">
+      <div style="font-size:13px;color:var(--muted)">Student ID • Keep this card with you</div>
+      <div style="font-size:13px;color:var(--muted)">ID: 21UK1A6658</div>
+    </div>
+  </article>
+
+  <!-- Usage note: place the photo named exactly 'IMG-20250310-WA0004.jpeg' in the same folder as this HTML file. -->
+</body>
+</html>

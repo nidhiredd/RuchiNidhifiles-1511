@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+      min-height:100vh;
+      margin:0;
+      display:grid;
+      place-items:center;
+      background:linear-gradient(180deg,#f3f4f6 0%, #ffffff 100%);
+      padding:32px;
+    }
+
+        /* Header section (spans full width) */
+    .header{
+      grid-column:1/-1;
+      background:linear-gradient(90deg,var(--accent1), var(--accent2));
+      color:rgb(9, 9, 9);
+      padding:18px 22px;
+      display:flex;
+      align-items:center;
+      gap:16px;
+    }
+
+        .logo{
+      width:64px;
+      height:64px;
+      border-radius:50%;
+      background:rgba(255,255,255,0.15);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-weight:700;
+      letter-spacing:0.6px;
+      font-size:11px;
+      text-align:center;
+      padding:6px;
+    }
+        .main{
+      padding:20px 22px;
+      display:flex;
+      gap:18px;
+      align-items:flex-start;
+    }
+        .photo{
+      width:140px;
+      height:170px;
+      flex:0 0 140px;
+      border-radius:6px;
+      overflow:hidden;
+      border:4px solid #fff;
+      box-shadow:0 6px 18px rgba(2,6,23,0.08);
+      background:#eee url('nidhi.jpg') center/cover no-repeat;
+    }
+        .label{font-size:12px; color:var(--muted);}
+    .value{font-weight:700; color:var(--deep);}
+
+    .course{grid-column:1/-1; margin-top:6px}
+    .valid{font-size:13px; color:var(--muted)}
+    .meta{
+      display:flex;
+      gap:12px;
+      align-items:center;
+      margin-top:12px;
+    }
+    </style>
+</head>
+<body>
+     <style>
+            .img{
+                background-color: rgb(75, 78, 81);
+                border-collapse: unset;
+                border-radius: 50%;
+            }
+            .div1{
+                border-top-right-radius: 40px;
+                border-bottom-left-radius: 40px;
+            }
+            .div2{
+                border-top-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+                display: flex;
+                justify-content: space-around;
+                background-color: rgb();
+            }
+            .dis{
+              display: inline;
+            }
+            </style>
+    <div class="div2">
+    <div class="div1" class="dis" style="background-color: rgb(75, 78, 81);">
+        <img src="vaag_logo.jpeg"   class="img" alt="Vaagdevi College Logo" width="150" height="150">
+        <h1 style="color: chocolate;">VAAGDEVI</h1>
+        <H3>ENGINEERING COLLEGE</H3>
+        <p style="color: darkgoldenrod;">Approved by AICTE,Affliated to JNTUH and SBTET Telangana</p>
+    </div>
+    <div>
+         <img src="nidhi.jpg" alt="image of Nidhi" width="200" height="200">
+         
+    </div>
+    </div>
+  <article class="id-card" role="article" aria-label="Student ID Card - Vaagdevi Engineering College">
+    <header class="header">
+      <div class="logo" aria-hidden>VEC</div>
+      <div class="title">
+        <h1>VAAGDEVI ENGINEERING COLLEGE</h1>
+        <p>Approved by AICTE, Affiliated to JNTUH and SBTET Telangana</p>
+      </div>
+    </header>
+
+    <section class="main">
+      <div class="photo" title="Student photo"></div>
+
+      <div class="details">
+        <div>
+          <div class="info">
+            <div>
+              <div class="label">Name</div>
+              <div class="value">BODDIREDDY NIDHI REDDY</div>
+            </div>
+            <div>
+              <div class="label">Roll No</div>
+              <div class="value">21UK1A6658</div>
+            </div>
+
+            <div class="course">
+              <div class="label">Course</div>
+              <div class="value">BTECH - CSM (AI &amp; ML)</div>
+            </div>
+
+            <div>
+              <div class="label">Valid Upto</div>
+              <div class="value">2021 - 2025</div>
+            </div>
+            <div>
+              <div class="label">Status</div>
+              <div class="value">Student</div>
+            </div>
+          </div>
+
+          <div class="meta">
+            <div class="qr">QR<br>Code</div>
+            <div class="valid">This ID card is issued by Vaagdevi Engineering College. Keep it safe and present when required.</div>
+          </div>
+        </div>
+
+        <div class="signature">
+          <small>Principal</small>
+          <div style="font-weight:700;" aria-hidden>———</div>
+        </div>
+      </div>
+
+    </section>
+</body>
+</html>
