@@ -1,0 +1,77 @@
+/* body{
+    h1{
+        color: blue;
+    }
+    background-image: url(https://cdn.pixabay.com/photo/2023/12/06/17/34/grill-8434113_1280.jpg) ;
+}
+div:hover p{
+    color: red;
+    display: block;
+}
+p{
+    display: none;
+
+}
+
+ /* h1:hover+p{
+    color: red;
+    opacity: 1;
+ }
+ p{
+    opacity: 0;
+ } */
+/* @media(min-width: 700px){
+    body{
+        background-image: url(https://cdn.pixabay.com/photo/2025/10/01/00/29/inside-dandlion-9865287_1280.jpg);
+        background-repeat: no-repeat;
+    }
+} */
+/* h2{
+    color: green;
+    text-align: center;
+    border: 2px solid black;
+    margin-top: 200px ;
+    margin-left: 250px;
+    width: 200px;
+    height: 250px;
+    transition: all 5s ease-in-out 3s;
+    background-color: white;
+}
+h2:hover{
+    transform: rotate(360deg);
+    background-color: yellow;
+    border-radius: 50%;
+    box-shadow: 10px 10px 5px grey;
+} */ 
+ h1{
+    font-size: 50px;
+    text-align: center;
+    /* text:linear-gradient(to left, rgb(239, 39, 9), rgb(14, 18, 234), rgb(19, 227, 19)); */
+    background: linear-gradient(to left, yellow, rgb(225, 27, 179), orange);
+    background-clip:text-webkit-text-fill-color : transparent;
+ }
+ h3{
+    height: 100px;
+    width: 200px;
+    margin-top: 200px;
+    margin-left: 300px;
+    animation: nidhi 5s ease-in-out 1s normal backwards;
+ }
+ @keyframes nidhi{
+    0%{
+        background-color: red;
+        transform: rotate(0deg);
+        border-radius: 0%;
+    }
+    50%{
+        background-color: yellow;
+        transform: rotate(180deg);
+        border-radius: 50%;
+    }
+    100%{
+        background-color: green;
+        transform: rotate(360deg);
+        border-radius: 0%;
+    }
+ }
+
